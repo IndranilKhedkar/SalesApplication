@@ -1,0 +1,14 @@
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\bin\Debug\netcoreapp3.1\SalesApplication.exe
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\obj\Debug\netcoreapp3.1\SalesApplication.csprojAssemblyReference.cache
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\obj\Debug\netcoreapp3.1\SalesApplication.AssemblyInfoInputs.cache
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\obj\Debug\netcoreapp3.1\SalesApplication.AssemblyInfo.cs
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\obj\Debug\netcoreapp3.1\SalesApplication.csproj.CopyComplete
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\bin\Debug\netcoreapp3.1\SalesApplication.deps.json
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\bin\Debug\netcoreapp3.1\SalesApplication.runtimeconfig.json
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\bin\Debug\netcoreapp3.1\SalesApplication.runtimeconfig.dev.json
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\bin\Debug\netcoreapp3.1\SalesApplication.dll
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\bin\Debug\netcoreapp3.1\SalesApplication.pdb
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\obj\Debug\netcoreapp3.1\SalesApplication.dll
+C:\Users\indranil_khedkar\Documents\Visual Studio 2019\Projects\SalesApplication\SalesApplication\obj\Debug\netcoreapp3.1\SalesApplication.pdb
