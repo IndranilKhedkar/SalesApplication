@@ -24,33 +24,41 @@ namespace SalesApplication
 
         private static void InitiateSale(ServiceProvider serviceProvider)
         {
-            var salesProvider = serviceProvider.GetService<ISalesProvider>();
-
-            string calculateShoppingBillAmount;
-            do
+            try
             {
-                Console.WriteLine("Customer Types: 1. Regular 2. Premium");
-                Console.Write("Please select one (1 or 2): ");
-                CustomerType customerType = (CustomerType)Enum.Parse(typeof(CustomerType), Console.ReadLine());
+                var salesProvider = serviceProvider.GetService<ISalesProvider>();
 
-                Console.Write($"{Environment.NewLine}Enter the purchase amount: ");
-                var purchaseAmount = decimal.Parse(Console.ReadLine());
-
-                var sales = salesProvider.GetSales(customerType, purchaseAmount);
-                var billAmount = sales.GetBillAmount();
-
-                Console.WriteLine($"{Environment.NewLine}The final bill amount={billAmount.ToString("C", CultureInfo.CurrentCulture)}");
-
-                Console.Write($"{Environment.NewLine}Do you want me to calculate shopping card bill amount again? Yes (y) or No (n): ");
-                calculateShoppingBillAmount = Console.ReadLine()?.ToLower();
-
-                Console.WriteLine();
-
-                if (calculateShoppingBillAmount == "n")
+                string calculateShoppingBillAmount;
+                do
                 {
-                    break;
-                }
-            } while (true);
+                    Console.WriteLine("Customer Types: 1. Regular 2. Premium");
+                    Console.Write("Please select one (1 or 2): ");
+                    CustomerType customerType = (CustomerType)Enum.Parse(typeof(CustomerType), Console.ReadLine());
+
+                    Console.Write($"{Environment.NewLine}Enter the purchase amount: ");
+                    var purchaseAmount = decimal.Parse(Console.ReadLine());
+
+                    var sales = salesProvider.GetSales(customerType, purchaseAmount);
+                    var billAmount = sales.GetBillAmount();
+
+                    Console.WriteLine($"{Environment.NewLine}The final bill amount={billAmount.ToString("C", CultureInfo.CurrentCulture)}");
+
+                    Console.Write($"{Environment.NewLine}Do you want me to calculate shopping card bill amount again? Yes (y) or No (n): ");
+                    calculateShoppingBillAmount = Console.ReadLine()?.ToLower();
+
+                    Console.WriteLine();
+
+                    if (calculateShoppingBillAmount == "n")
+                    {
+                        break;
+                    }
+                } while (true);
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine("Unable to calculate the bill amount.");
+                Console.Error.WriteLine($"Exception: {ex}");
+            }
         }
     }
 }
